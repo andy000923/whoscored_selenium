@@ -11,7 +11,7 @@ driver.implicitly_wait(3)
 # url에 접근한다.
 driver.implicitly_wait(3) # 암묵적으로 웹 자원을 (최대) 3초 기다리기
 # Login
-driver.get('https://1xbet.whoscored.com/Regions/252/Tournaments/2/Seasons/9075/Stages/20934/PlayerStatistics/England-Premier-League-2022-2023') # 네이버 로그인 URL로 이동하기
+driver.get('https://1xbet.whoscored.com/Regions/252/Tournaments/2/Seasons/9075/Stages/20934/PlayerStatistics/England-Premier-League-2022-2023') # whoscored statics URL로 이동하기
 driver.find_element_by_xpath('//*[@id="stage-top-player-stats-options"]/li[2]').click() #Defensive 버튼클릭하기
 
 html = driver.page_source # 페이지의 elements모두 가져오기
