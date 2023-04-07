@@ -1,4 +1,4 @@
-from selenium import webdriver
+from selenium import webdriver #pip install selenium==3.141.0, 버전 확인
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 
@@ -6,7 +6,7 @@ f = open("player_defensive_stat_info.csv", "w", encoding="UTF-8")
 # 헤더 추가하기
 f.write("Player,Tackle,Inter,Fouls,Clear,Drb,Blocks")
 
-driver = webdriver.Chrome('./chromedriver')
+driver = webdriver.Chrome('./chromedriver') #크롬 드라이버 설치해서 상위폴더에 넣기, 버전 확인
 driver.implicitly_wait(3)
 # url에 접근한다.
 driver.implicitly_wait(3) # 암묵적으로 웹 자원을 (최대) 3초 기다리기
